@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/auth0/go-auth0"
-	"github.com/auth0/go-auth0/internal/testing/expect"
+	"github.com/timandy/go-auth0"
+	"github.com/timandy/go-auth0/internal/testing/expect"
 )
 
 func TestBranding(t *testing.T) {

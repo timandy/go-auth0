@@ -5,8 +5,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/auth0/go-auth0"
-	"github.com/auth0/go-auth0/management"
+	"github.com/timandy/go-auth0"
+	"github.com/timandy/go-auth0/management"
 )
 
 var (

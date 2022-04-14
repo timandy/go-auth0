@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/auth0/go-auth0"
+	"github.com/timandy/go-auth0"
 )
 
 func TestEmailTemplate(t *testing.T) {

@@ -1,9 +1,9 @@
 # Auth0 Go SDK
 
-[![GoDoc](https://pkg.go.dev/badge/github.com/auth0/go-auth0.svg)](https://pkg.go.dev/github.com/auth0/go-auth0)
-[![License](https://img.shields.io/github/license/auth0/go-auth0.svg?style=flat-square)](https://github.com/auth0/go-auth0/blob/main/LICENSE)
-[![Release](https://img.shields.io/github/v/release/auth0/go-auth0?include_prereleases&style=flat-square)](https://github.com/auth0/go-auth0/releases)
-[![Tests](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fauth0%2Fgo-auth0%2Fbadge%3Fref%3Dmain&style=flat-square)](https://github.com/auth0/go-auth0/actions?query=branch%3Amain)
+[![GoDoc](https://pkg.go.dev/badge/github.com/timandy/go-auth0.svg)](https://pkg.go.dev/github.com/timandy/go-auth0)
+[![License](https://img.shields.io/github/license/auth0/go-auth0.svg?style=flat-square)](https://github.com/timandy/go-auth0/blob/main/LICENSE)
+[![Release](https://img.shields.io/github/v/release/auth0/go-auth0?include_prereleases&style=flat-square)](https://github.com/timandy/go-auth0/releases)
+[![Tests](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fauth0%2Fgo-auth0%2Fbadge%3Fref%3Dmain&style=flat-square)](https://github.com/timandy/go-auth0/actions?query=branch%3Amain)
 [![Codecov](https://img.shields.io/codecov/c/github/auth0/go-auth0?style=flat-square)](https://codecov.io/gh/auth0/go-auth0)
 
 ---
@@ -31,7 +31,7 @@ _Note: This SDK was previously maintained under [go-auth0/auth0](https://github.
 ## Installation
 
 ```shell
-go get github.com/auth0/go-auth0
+go get github.com/timandy/go-auth0
 ```
 
 [[table of contents]](#table-of-contents)
@@ -48,8 +48,8 @@ For more information about [Auth0](http://auth0.com/) please visit the [Auth0 Do
 
 ```go
 import (
-	"github.com/auth0/go-auth0"
-	"github.com/auth0/go-auth0/management"
+	"github.com/timandy/go-auth0"
+	"github.com/timandy/go-auth0/management"
 )
 ```
 

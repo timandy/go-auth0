@@ -5,7 +5,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/auth0/go-auth0"
+	"github.com/timandy/go-auth0"
 )
 
 func TestCustomDomain(t *testing.T) {

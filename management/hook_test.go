@@ -3,8 +3,8 @@ package management
 import (
 	"testing"
 
-	"github.com/auth0/go-auth0"
-	"github.com/auth0/go-auth0/internal/testing/expect"
+	"github.com/timandy/go-auth0"
+	"github.com/timandy/go-auth0/internal/testing/expect"
 )
 
 func TestHook(t *testing.T) {

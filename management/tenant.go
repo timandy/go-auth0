@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"math"
 
-	"github.com/auth0/go-auth0"
+	"github.com/timandy/go-auth0"
 )
 
 // Tenant represents an Auth0 Tenant.

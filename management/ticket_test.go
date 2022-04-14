@@ -3,7 +3,7 @@ package management
 import (
 	"testing"
 
-	"github.com/auth0/go-auth0"
+	"github.com/timandy/go-auth0"
 )
 
 func TestTicket(t *testing.T) {

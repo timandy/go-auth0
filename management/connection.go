@@ -5,7 +5,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/auth0/go-auth0/internal/tag"
+	"github.com/timandy/go-auth0/internal/tag"
 )
 
 const (

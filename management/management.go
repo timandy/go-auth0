@@ -16,7 +16,7 @@ import (
 
 	"golang.org/x/oauth2"
 
-	"github.com/auth0/go-auth0/internal/client"
+	"github.com/timandy/go-auth0/internal/client"
 )
 
 // Option is used for passing options to the Management client.
