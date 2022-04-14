@@ -326,7 +326,13 @@ func (m *Management) Request(method, uri string, v interface{}, options ...Reque
 	}
 
 	if res.StatusCode != http.StatusNoContent && res.StatusCode != http.StatusAccepted {
-		err := json.NewDecoder(res.Body).Decode(v)
+		bytes, ee := ioutil.ReadAll(res.Body)
+		if ee != nil {
+			panic(ee)
+		}
+		jsonstr := (string)(bytes)
+		jsonstr = strings.ReplaceAll(jsonstr, "\"allowed_audiences\":\"\",", "")
+		err := json.Unmarshal(([]byte)(jsonstr), v)
 		if err != nil {
 			return fmt.Errorf("decoding response payload failed: %w", err)
 		}
