@@ -54,7 +54,7 @@ func TestUserManager_Update(t *testing.T) {
 	actualUser := &User{
 		Connection:  auth0.String("Username-Password-Authentication"),
 		Password:    auth0.String("I don't need one"),
-		AppMetadata: &appMetadata,
+		AppMetadata: appMetadata,
 	}
 	err := m.User.Update(expectedUser.GetID(), actualUser)
 
@@ -66,7 +66,7 @@ func TestUserManager_Update(t *testing.T) {
 			"kill_two_stones_with_one_bird",
 			"can_hear_sign_language",
 		},
-	}, *actualUser.AppMetadata)
+	}, actualUser.AppMetadata)
 	assert.Equal(t, "Username-Password-Authentication", actualUser.GetConnection())
 }
 
@@ -366,10 +366,10 @@ func givenAUser(t *testing.T) *User {
 		GivenName:     auth0.String("Chuck"),
 		FamilyName:    auth0.String("Sanchez"),
 		Nickname:      auth0.String("Chucky"),
-		UserMetadata:  &userMetadata,
+		UserMetadata:  userMetadata,
 		EmailVerified: auth0.Bool(true),
 		VerifyEmail:   auth0.Bool(false),
-		AppMetadata:   &appMetadata,
+		AppMetadata:   appMetadata,
 		Picture:       auth0.String("https://example-picture-url.jpg"),
 		Blocked:       auth0.Bool(false),
 	}
