@@ -1,5 +1,97 @@
 # Change Log
 
+<a name="v0.9.3"></a>
+## [v0.9.3](https://github.com/auth0/go-auth0/tree/v0.9.3) (2022-07-26)
+
+[Full Changelog](https://github.com/auth0/go-auth0/compare/v0.9.2...v0.9.3)
+
+### Added
+
+- Added support for checkpoint based pagination ([#97](https://github.com/auth0/go-auth0/pull/97))
+- Added Multifactor field to User struct ([#97](https://github.com/auth0/go-auth0/pull/97))
+- Added ClientID field to User struct ([#97](https://github.com/auth0/go-auth0/pull/97))
+
+
+<a name="v0.9.2"></a>
+## [v0.9.2](https://github.com/auth0/go-auth0/tree/v0.9.2) (2022-07-18)
+
+[Full Changelog](https://github.com/auth0/go-auth0/compare/v0.9.1...v0.9.2)
+
+### Changed
+
+- **[Breaking]** Change Metadata to `*map[string]interface{}` in Organization ([#95](https://github.com/auth0/go-auth0/pull/95))
+- **[Breaking]** Change Metadata fields to `*map[string]interface{}` in User ([#96s](https://github.com/auth0/go-auth0/pull/95))
+
+
+<a name="v0.9.1"></a>
+## [v0.9.1](https://github.com/auth0/go-auth0/tree/v0.9.1) (2022-07-15)
+
+[Full Changelog](https://github.com/auth0/go-auth0/compare/v0.9.0...v0.9.1)
+
+### Added
+
+- Added more connection strategies that default to OAuth2 ([#93](https://github.com/auth0/go-auth0/pull/93))
+
+
+<a name="v0.9.0"></a>
+## [v0.9.0](https://github.com/auth0/go-auth0/tree/v0.9.0) (2022-07-12)
+
+[Full Changelog](https://github.com/auth0/go-auth0/compare/v0.8.0...v0.9.0)
+
+### Added
+
+- Added `session_cookie` tenant property ([#88](https://github.com/auth0/go-auth0/pull/88))
+- Added `upstream_params` connection property ([#89](https://github.com/auth0/go-auth0/pull/89))
+- Added `include_email_in_redirect` email template property ([#90](https://github.com/auth0/go-auth0/pull/90))
+
+<a name="v0.8.0"></a>
+## [v0.8.0](https://github.com/auth0/go-auth0/tree/v0.8.0) (2022-07-06)
+
+[Full Changelog](https://github.com/auth0/go-auth0/compare/v0.7.0...v0.8.0)
+
+### Added
+
+- Added `DisableSignOut` field to SAMLP connection options ([#78](https://github.com/auth0/go-auth0/pull/78))
+- Added several missing tenant flags ([#80](https://github.com/auth0/go-auth0/pull/80))
+- Added `PKCEEnabled` field to Oauth2 connection options ([#82](https://github.com/auth0/go-auth0/pull/82))
+- Added `Read()` and `Update()` to WebAuthn Roaming Settings ([#83](https://github.com/auth0/go-auth0/pull/83))
+- Added `Read()` and `Update()` to WebAuthn Platform Settings ([#83](https://github.com/auth0/go-auth0/pull/83))
+- Added `Read()` and `Update()` to Duo Settings ([#84](https://github.com/auth0/go-auth0/pull/84))
+- Added `Read()` and `Update()` to Push CustomApp Settings ([#85](https://github.com/auth0/go-auth0/pull/85))
+- Added `Enable()` Recovery Code MFA ([#86](https://github.com/auth0/go-auth0/pull/86))
+
+
+<a name="v0.7.0"></a>
+## [v0.7.0](https://github.com/auth0/go-auth0/tree/v0.7.0) (2022-06-22)
+
+[Full Changelog](https://github.com/auth0/go-auth0/compare/v0.6.4...v0.7.0)
+
+### Added
+
+- Added `icon_url` to OAuth2 connection options ([#74](https://github.com/auth0/go-auth0/pull/74))
+
+### Changed
+
+- **[Breaking]** Changed `AuthParams` to an `interface{}` in Email and SMS connection options ([#75](https://github.com/auth0/go-auth0/pull/75))
+
+
+<a name="v0.6.4"></a>
+## [v0.6.4](https://github.com/auth0/go-auth0/tree/v0.6.4) (2022-06-08)
+
+[Full Changelog](https://github.com/auth0/go-auth0/compare/v0.6.3...v0.6.4)
+
+### Added
+
+- Added support for webauthn_platform_first_factor_prompt flag in the prompt ([#59](https://github.com/auth0/go-auth0/pull/59))
+
+### Changed
+
+- Bumped Go version to 1.18 ([#71](https://github.com/auth0/go-auth0/pull/71))
+- Ensured that all the tests can be run in any order 
+- Ensured that all the tests clean up the test tenant afterwards of any created resources
+- Enabled http recordings with go-vcr to be used within tests for more reliable testing
+
+
 <a name="v0.6.3"></a>
 ## [v0.6.3](https://github.com/timandy/go-auth0/tree/v0.6.3) (2022-04-13)
 
