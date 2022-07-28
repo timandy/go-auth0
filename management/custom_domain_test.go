@@ -7,7 +7,7 @@ import (
 
 	"github.com/stretchr/testify/assert"
 
-	"github.com/auth0/go-auth0"
+	"github.com/timandy/go-auth0"
 )
 
 func TestCustomDomainManager_Create(t *testing.T) {
