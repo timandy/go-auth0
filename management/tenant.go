@@ -1,11 +1,12 @@
 package management
 
 import (
-	"encoding/json"
+	enjson "encoding/json"
 	"fmt"
 	"math"
 
 	"github.com/timandy/go-auth0"
+	"github.com/timandy/go-auth0/codec/json"
 )
 
 // Tenant represents an Auth0 Tenant.
@@ -290,7 +291,7 @@ func (c *TenantUniversalLoginColors) UnmarshalJSON(data []byte) error {
 	type colors BrandingColors
 	type colorsWrapper struct {
 		*colors
-		RawPageBackground json.RawMessage `json:"page_background,omitempty"`
+		RawPageBackground enjson.RawMessage `json:"page_background,omitempty"`
 	}
 
 	alias := &colorsWrapper{(*colors)(c), nil}

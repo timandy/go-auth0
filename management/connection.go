@@ -1,10 +1,11 @@
 package management
 
 import (
-	"encoding/json"
+	enjson "encoding/json"
 	"sort"
 	"strings"
 
+	"github.com/timandy/go-auth0/codec/json"
 	"github.com/timandy/go-auth0/internal/tag"
 )
 
@@ -144,7 +145,7 @@ func (c *Connection) MarshalJSON() ([]byte, error) {
 	type connection Connection
 	type connectionWrapper struct {
 		*connection
-		RawOptions json.RawMessage `json:"options,omitempty"`
+		RawOptions enjson.RawMessage `json:"options,omitempty"`
 	}
 
 	w := &connectionWrapper{(*connection)(c), nil}
@@ -165,7 +166,7 @@ func (c *Connection) UnmarshalJSON(b []byte) error {
 	type connection Connection
 	type connectionWrapper struct {
 		*connection
-		RawOptions json.RawMessage `json:"options,omitempty"`
+		RawOptions enjson.RawMessage `json:"options,omitempty"`
 	}
 
 	w := &connectionWrapper{(*connection)(c), nil}

@@ -1,15 +1,14 @@
 package management
 
 import (
-	"encoding/json"
 	"net/http"
 	"testing"
 	"time"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-
 	"github.com/timandy/go-auth0"
+	"github.com/timandy/go-auth0/codec/json"
 )
 
 func TestClient_Create(t *testing.T) {

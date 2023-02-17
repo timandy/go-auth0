@@ -1,7 +1,6 @@
 package management
 
 import (
-	"encoding/json"
 	"fmt"
 	"math/rand"
 	"net/http"
@@ -11,8 +10,8 @@ import (
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-
 	"github.com/timandy/go-auth0"
+	"github.com/timandy/go-auth0/codec/json"
 )
 
 func TestUserManager_Create(t *testing.T) {

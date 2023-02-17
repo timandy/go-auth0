@@ -1,7 +1,9 @@
 package management
 
 import (
-	"encoding/json"
+	enjson "encoding/json"
+
+	"github.com/timandy/go-auth0/codec/json"
 )
 
 const (
@@ -51,7 +53,7 @@ func (ls *LogStream) MarshalJSON() ([]byte, error) {
 	type logStream LogStream
 	type logStreamWrapper struct {
 		*logStream
-		RawSink json.RawMessage `json:"sink,omitempty"`
+		RawSink enjson.RawMessage `json:"sink,omitempty"`
 	}
 
 	w := &logStreamWrapper{(*logStream)(ls), nil}
@@ -72,7 +74,7 @@ func (ls *LogStream) UnmarshalJSON(b []byte) error {
 	type logStream LogStream
 	type logStreamWrapper struct {
 		*logStream
-		RawSink json.RawMessage `json:"sink,omitempty"`
+		RawSink enjson.RawMessage `json:"sink,omitempty"`
 	}
 
 	w := &logStreamWrapper{(*logStream)(ls), nil}

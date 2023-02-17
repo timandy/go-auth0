@@ -1,11 +1,12 @@
 package management
 
 import (
-	"encoding/json"
 	"net/http"
 	"reflect"
 	"strconv"
 	"time"
+
+	"github.com/timandy/go-auth0/codec/json"
 )
 
 // User represents an Auth0 user resource.

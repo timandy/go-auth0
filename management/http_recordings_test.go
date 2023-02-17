@@ -1,7 +1,6 @@
 package management
 
 import (
-	"encoding/json"
 	"fmt"
 	"net/http"
 	"strings"
@@ -11,8 +10,8 @@ import (
 	"github.com/dnaeon/go-vcr/v2/cassette"
 	"github.com/dnaeon/go-vcr/v2/recorder"
 	"github.com/stretchr/testify/require"
-
 	"github.com/timandy/go-auth0"
+	"github.com/timandy/go-auth0/codec/json"
 )
 
 func setupHTTPRecordings(t *testing.T) {

@@ -1,9 +1,10 @@
 package management
 
 import (
-	"encoding/json"
 	"net/http"
 	"time"
+
+	"github.com/timandy/go-auth0/codec/json"
 )
 
 // Enrollment is used for MultiFactor Authentication.

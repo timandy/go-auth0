@@ -1,12 +1,11 @@
 package management
 
 import (
-	"encoding/json"
 	"testing"
 
 	"github.com/stretchr/testify/assert"
-
 	"github.com/timandy/go-auth0"
+	"github.com/timandy/go-auth0/codec/json"
 )
 
 func TestBrandingManager_Read(t *testing.T) {

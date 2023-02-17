@@ -1,11 +1,11 @@
 package management
 
 import (
-	"encoding/json"
 	"fmt"
 	"strconv"
 
 	"github.com/timandy/go-auth0"
+	"github.com/timandy/go-auth0/codec/json"
 )
 
 // Client is an application or a sso integration.

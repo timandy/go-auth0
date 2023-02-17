@@ -1,9 +1,11 @@
 package management
 
 import (
-	"encoding/json"
+	enjson "encoding/json"
 	"fmt"
 	"net/http"
+
+	"github.com/timandy/go-auth0/codec/json"
 )
 
 // Branding is used to customize the look and feel of Auth0 to align
@@ -82,7 +84,7 @@ func (bc *BrandingColors) UnmarshalJSON(data []byte) error {
 	type brandingColors BrandingColors
 	type brandingColorsWrapper struct {
 		*brandingColors
-		RawPageBackground json.RawMessage `json:"page_background,omitempty"`
+		RawPageBackground enjson.RawMessage `json:"page_background,omitempty"`
 	}
 
 	alias := &brandingColorsWrapper{(*brandingColors)(bc), nil}

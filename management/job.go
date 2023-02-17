@@ -2,12 +2,13 @@ package management
 
 import (
 	"bytes"
-	"encoding/json"
 	"mime/multipart"
 	"net/http"
 	"net/textproto"
 	"strconv"
 	"time"
+
+	"github.com/timandy/go-auth0/codec/json"
 )
 
 // Job is used for importing/exporting users or for

@@ -4,7 +4,7 @@
 package management
 
 import (
-	"encoding/json"
+	"github.com/timandy/go-auth0/codec/json"
 	"testing"
 	"time"
 )

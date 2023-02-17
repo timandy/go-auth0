@@ -5,7 +5,6 @@ package management
 import (
 	"bytes"
 	"context"
-	"encoding/json"
 	"fmt"
 	"io"
 	"io/ioutil"
@@ -14,9 +13,9 @@ import (
 	"strconv"
 	"strings"
 
-	"golang.org/x/oauth2"
-
+	"github.com/timandy/go-auth0/codec/json"
 	"github.com/timandy/go-auth0/internal/client"
+	"golang.org/x/oauth2"
 )
 
 // Option is used for passing options to the Management client.
