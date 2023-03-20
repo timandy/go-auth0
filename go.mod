@@ -5,7 +5,7 @@ go 1.18
 require (
 	github.com/PuerkitoBio/rehttp v1.1.0
 	github.com/dnaeon/go-vcr/v2 v2.1.0
-	github.com/goccy/go-json v0.10.0
+	github.com/goccy/go-json v0.10.2
 	github.com/joho/godotenv v1.5.1
 	github.com/json-iterator/go v1.1.12
 	github.com/stretchr/testify v1.8.1
