@@ -8,7 +8,7 @@ require (
 	github.com/goccy/go-json v0.10.0
 	github.com/joho/godotenv v1.5.1
 	github.com/json-iterator/go v1.1.12
-	github.com/stretchr/testify v1.8.1
+	github.com/stretchr/testify v1.8.3
 	golang.org/x/oauth2 v0.0.0-20220411215720-9780585627b5
 )
 
